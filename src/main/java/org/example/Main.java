@@ -92,8 +92,13 @@ public class Main {
      */
     public static boolean isVocale(char carattere) {
         boolean risposta=false;
-        // TODO: SCRIVI QUI IL CODICE
-        return risposta;
+        carattere = Character.toLowerCase(carattere);
+         if (carattere == 'a' ||/**i || sono or */ carattere == 'e' || carattere == 'i' || carattere == 'o' || carattere == 'u') { 
+            return true;
+        } 
+        else { 
+            return false; 
+        } 
     }
 
     /**
@@ -107,8 +112,16 @@ public class Main {
     public static String tipoTriangolo(float lato1, float lato2, float lato3) {
         String risposta="equilatero,isoscele,scaleno";
         // TODO: SCRIVI QUI IL CODICE
-        return risposta;
-    }
+        if (lato1 == lato2 && lato2 == lato3) {
+             return "equilatero"; 
+            }
+             else if (lato1 == lato2 || lato1 == lato3 || lato2 == lato3) { 
+                return "isoscele"; 
+            } 
+            else {
+                 return "scaleno"; 
+                } 
+            }
 
     /**
      * ESERCIZIO 5
