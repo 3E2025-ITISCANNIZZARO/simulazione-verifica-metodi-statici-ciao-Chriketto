@@ -61,7 +61,7 @@ public class Main {
      * @return somma dei due addendi
      */
     public static int somma(int a,int b) {
-        int risposta=0;
+        int risposta= a + b;
         // TODO: SCRIVI QUI IL CODICE
         return risposta;
     }
@@ -76,19 +76,29 @@ public class Main {
     public static String isMaggiorenne(int age) {
         String risposta="maggiorenne,minorenne";
         // TODO: SCRIVI QUI IL CODICE
-        return risposta;
-    }
+        if (age >= 18) { 
+            return risposta; 
+        } 
+        else { 
+            return risposta; 
+        }
+     }
 
     /**
-     * ESERCIZIO 3
+     * ESERCIZIO 3 
      * Scrivi un programma Java che verifica se un carattere è una vocale o una consonante.
      * @param carattere da controllare
      * @return vero se è una vocale, falso negli altri casi
      */
     public static boolean isVocale(char carattere) {
         boolean risposta=false;
-        // TODO: SCRIVI QUI IL CODICE
-        return risposta;
+        carattere = Character.toLowerCase(carattere);
+         if (carattere == 'a' ||/**i || sono or */ carattere == 'e' || carattere == 'i' || carattere == 'o' || carattere == 'u') { 
+            return true;
+        } 
+        else { 
+            return false; 
+        } 
     }
 
     /**
@@ -102,8 +112,16 @@ public class Main {
     public static String tipoTriangolo(float lato1, float lato2, float lato3) {
         String risposta="equilatero,isoscele,scaleno";
         // TODO: SCRIVI QUI IL CODICE
-        return risposta;
-    }
+        if (lato1 == lato2 && lato2 == lato3) {
+             return "equilatero"; 
+            }
+             else if (lato1 == lato2 || lato1 == lato3 || lato2 == lato3) { 
+                return "isoscele"; 
+            } 
+            else {
+                 return "scaleno"; 
+                } 
+            }
 
     /**
      * ESERCIZIO 5
