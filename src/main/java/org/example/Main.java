@@ -61,7 +61,7 @@ public class Main {
      * @return somma dei due addendi
      */
     public static int somma(int a,int b) {
-        int risposta=0;
+        int risposta= a + b;
         // TODO: SCRIVI QUI IL CODICE
         return risposta;
     }
@@ -76,11 +76,16 @@ public class Main {
     public static String isMaggiorenne(int age) {
         String risposta="maggiorenne,minorenne";
         // TODO: SCRIVI QUI IL CODICE
-        return risposta;
-    }
+        if (age >= 18) { 
+            return risposta; 
+        } 
+        else { 
+            return risposta; 
+        }
+     }
 
     /**
-     * ESERCIZIO 3
+     * ESERCIZIO 3 
      * Scrivi un programma Java che verifica se un carattere è una vocale o una consonante.
      * @param carattere da controllare
      * @return vero se è una vocale, falso negli altri casi
